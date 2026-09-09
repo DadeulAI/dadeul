@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="다들에 서비스, 제휴, 채용, 홍보 관련 문의를 남겨주세요." />
+    <title>Contact | 다들</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=7" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="./index.html" aria-label="다들 홈">다들<span>→</span></a>
+      <nav aria-label="주요 메뉴">
+        <a href="./index.html#company">회사소개</a><a href="./index.html#service">서비스</a><a href="./index.html#values">인재상</a><a href="./employees.html">임직원</a><a href="./pr.html">홍보</a>
+      </nav>
+      <a class="nav-cta active-cta" href="./contact.html">Contact</a>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-intro">
+        <p>CONTACT DADLE</p>
+        <h1>다음 이야기를<br /><span>함께 시작해요.</span></h1>
+        <div class="contact-guide"><p>서비스 도입, 제휴, 채용, 홍보 등<br />다들과 나누고 싶은 이야기를 남겨주세요.</p><span>→</span></div>
+      </section>
+
+      <section class="contact-form-section">
+        <form id="contactForm" novalidate>
+          <div class="field full"><label for="inquiryType">문의 유형</label><select id="inquiryType" name="inquiryType" required><option value="">선택해주세요</option><option>서비스 도입</option><option>사업 제휴</option><option>채용</option><option>홍보·미디어</option><option>기타</option></select></div>
+          <div class="field"><label for="name">이름</label><input id="name" name="name" type="text" placeholder="이름을 입력해주세요" required /></div>
+          <div class="field"><label for="organization">소속</label><input id="organization" name="organization" type="text" placeholder="회사 또는 기관명" /></div>
+          <div class="field full"><label for="email">이메일</label><input id="email" name="email" type="email" placeholder="name@company.com" required /></div>
+          <div class="field full"><label for="message">문의 내용</label><textarea id="message" name="message" rows="7" placeholder="다들과 나누고 싶은 이야기를 적어주세요" required></textarea></div>
+          <label class="consent"><input type="checkbox" id="consent" required /><span>문의 답변을 위한 개인정보 수집 및 이용에 동의합니다.</span></label>
+          <button class="submit-button" type="submit">문의 보내기 <span>→</span></button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+        <aside class="contact-aside"><span>DIRECT CONTACT</span><h2>빠른 문의가<br />필요하신가요?</h2><p>문의 채널은 준비 중입니다.<br />현재는 오른쪽 양식을 이용해주세요.</p><div><small>Response time</small><strong>영업일 기준 2-3일</strong></div></aside>
+      </section>
+    </main>
+
+    <footer><a class="wordmark footer-mark" href="./index.html"><span>다들</span><span class="arrow">→</span></a><div><strong>주식회사 다들</strong><p>가르치며 이해하는 기술을 만듭니다.</p></div><p>© 2026 DADLE</p></footer>
+    <script src="./contact.js"></script>
+  </body>
+</html>
