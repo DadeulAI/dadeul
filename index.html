@@ -7,8 +7,9 @@
     <title>다들 | 사람의 성장을 돕는 AI 기술</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=7" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./styles.css?v=21" />
   </head>
   <body>
     <header class="site-header">
@@ -26,18 +27,254 @@
     <main>
       <section class="home-hero" id="top">
         <div class="hero-copy">
-          <p class="hero-overline">주식회사 다들</p>
-          <h1><span>배우는 사람이</span><span>앞으로 나아가도록.</span></h1>
-          <p class="hero-description">다들은 스스로 이해하고 성장하게 만드는 AI 기술을 개발합니다.</p>
+          <a class="hero-badge" href="#service">시험·면접 전, 말로 설명하며 공부하기 <span aria-hidden="true">→</span></a>
+          <h1>
+            <span class="hero-light"><em>안다고 생각했던 것,</em></span>
+            <span class="hero-bold">설명해 보면 보입니다.</span>
+          </h1>
+          <p class="hero-description">AI와 공부하면 다 아는 것 같지만, 막상 설명하려면 막힙니다. 다들 AI는 내가 안다고 착각한 부분을 찾아, 진짜 설명할 수 있을 때까지 다시 배우게 합니다.</p>
           <div class="hero-actions">
-            <a class="primary-link" href="#company">다들 알아보기 <span aria-hidden="true">→</span></a>
-            <a class="text-link" href="#service">대표 서비스 보기</a>
+            <a class="primary-link" href="#demo">직접 설명해 보기 <span aria-hidden="true">→</span></a>
+            <a class="secondary-link" href="#company">다들 알아보기</a>
           </div>
         </div>
-        <figure class="hero-media">
-          <img src="./public/ai-junior-hero-muted.png" alt="다들 AI 후배 캐릭터" />
-          <figcaption>잘 모르지만, 잘 배우는 AI 후배</figcaption>
-        </figure>
+      </section>
+
+      <section class="compare-section" id="problem">
+        <div class="compare-heading">
+          <p class="section-kicker">왜 다들 AI인가</p>
+          <h2>AI랑 공부하면 다 아는 것 같죠.<br /><strong>그런데 그건 착각일 수 있습니다.</strong></h2>
+          <p>AI의 설명을 읽고 고개를 끄덕이다 보면 이해한 기분이 듭니다. 하지만 막상 내 말로 꺼내려 하면 막히죠. 같은 주제를 두 가지 방법으로 공부하면 어떻게 될까요?</p>
+        </div>
+
+        <div class="compare" id="compare" data-show="plain">
+          <p class="compare-topic">같은 주제 · <strong>여름은 왜 더울까?</strong></p>
+          <div class="compare-toggle" role="group" aria-label="비교 대상 선택">
+            <button type="button" data-show="plain" aria-pressed="true">보통의 AI</button>
+            <button type="button" data-show="dadle" aria-pressed="false">다들 AI 후배</button>
+          </div>
+          <div class="compare-cols">
+            <article class="compare-card is-plain" data-col="plain">
+              <p class="compare-label">보통의 AI로 공부할 때</p>
+              <div class="cmp-thread">
+                <p class="cmp-msg is-me">여름은 왜 더워?</p>
+                <p class="cmp-msg is-ai">여름이 더운 이유는 지구의 자전축이 약 23.5° 기울어져 있기 때문입니다. 북반구가 태양 쪽으로 기울면 햇빛이 높은 각도로 비치고 낮이 길어져 기온이 오릅니다. 또한 지구와 태양의 거리는 계절에 거의 영향을 주지 않으며…</p>
+                <p class="cmp-thought">아하, 그렇구나. 이제 알겠다!</p>
+              </div>
+              <div class="compare-exam">
+                <span>일주일 뒤 · 실제 시험</span>
+                <p class="exam-q">Q. 지구는 1월에 태양과 가장 가까워요. 그런데 왜 한국은 1월이 겨울일까요?</p>
+                <p class="exam-a"><b aria-label="오답">✗</b>“음… 1월엔 태양이랑 멀어서…?”</p>
+              </div>
+              <div class="compare-verdict"><strong>시험장에서야 착각을 알게 됩니다</strong><span>읽을 땐 이해한 것 같았지만, 내 말로 꺼내 본 적은 없었습니다.</span></div>
+            </article>
+            <article class="compare-card is-dadle" data-col="dadle">
+              <p class="compare-label"><img src="./public/junior-student.webp?v=2" alt="" />다들 AI 후배와 공부할 때</p>
+              <div class="cmp-thread">
+                <p class="cmp-msg is-me">여름엔 지구가 태양이랑 가까워져서 더운 거야.</p>
+                <p class="cmp-msg is-junior">가까우면 더운 거군요! 그렇게 외울게요, 선배.</p>
+              </div>
+              <div class="compare-exam">
+                <span>지금 바로 · 후배의 시험</span>
+                <p class="exam-q">Q. 지구는 1월에 태양과 가장 가까워요. 그런데 왜 한국은 1월이 겨울일까요?</p>
+                <p class="exam-a"><b aria-label="오답">✗</b>“선배가 가르쳐 준 대로면 1월이 제일 더워야 하는데… 모르겠어요.”</p>
+              </div>
+              <div class="compare-verdict"><strong>시험 전에 착각을 먼저 발견합니다</strong><span>후배는 내가 가르친 것만 알아서, 후배의 오답이 곧 내가 모르는 부분입니다.</span></div>
+            </article>
+          </div>
+        </div>
+
+        <article class="problem-answer">
+          <div>
+            <div class="problem-top"><span>다들 AI</span>안다는 착각을 확인하는 방법</div>
+            <h3>안다고 생각한 것을,<br /><mark class="ok">후배를 가르쳐 확인합니다.</mark></h3>
+            <p>내가 설명한 만큼만 아는 후배가 시험을 보면, 안다고 착각했던 부분이 오답으로 드러납니다. 만점이 나올 때까지 다시 공부하고 다시 가르치세요.</p>
+          </div>
+          <a class="answer-link" href="#demo">직접 가르쳐 보기 <span aria-hidden="true">→</span></a>
+          <img src="./public/senior-tutor.webp" alt="" />
+        </article>
+      </section>
+
+      <section class="moments-section" id="moments">
+        <div class="moments-heading">
+          <p class="section-pill">이런 순간</p>
+          <h2>이런 순간, 있지 않나요?</h2>
+          <p>충분히 공부했다고 생각했는데, 막상 꺼내려는 순간 막혔던 경험.</p>
+          <small>서비스 기획 과정에서 정리한 학습 상황 예시입니다.</small>
+        </div>
+        <div class="moments-grid">
+            <div class="moment-col">
+            <div class="moment-track">
+              <figure class="moment-card">
+                <blockquote>면접관이 ‘그게 왜 필요한지 설명해 보세요’라고 하는 순간, <mark class="gap">머리가 하얘졌어요.</mark></blockquote>
+                <figcaption><span>컴</span><div><strong>컴퓨터공학과 4학년</strong>기술면접 준비</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>AI 설명을 읽을 땐 다 이해한 것 같았는데, <mark class="gap">창을 닫으니 기억이 안 났어요.</mark></blockquote>
+                <figcaption><span>경</span><div><strong>경영학과 2학년</strong>전공 시험</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>형광펜으로 칠한 부분은 많은데, 막상 <mark class="gap">말로 정리가 안 돼요.</mark></blockquote>
+                <figcaption><span>교</span><div><strong>교육학과 1학년</strong>중간고사</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>교수님의 추가 질문 하나에 <mark class="gap">준비한 설명이 무너졌어요.</mark></blockquote>
+                <figcaption><span>대</span><div><strong>대학원 입시</strong>구술 면접</div></figcaption>
+              </figure>
+            </div>
+            </div>
+            <div class="moment-col">
+            <div class="moment-track">
+              <figure class="moment-card">
+                <blockquote>교재를 세 번이나 읽었는데, 시험지 앞에서는 <mark class="gap">첫 줄이 써지지 않았어요.</mark></blockquote>
+                <figcaption><span>간</span><div><strong>간호학과 3학년</strong>국가고시 준비</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>스터디에서 발표할 차례가 되자 <mark class="gap">알던 개념이 뒤죽박죽</mark> 섞였어요.</blockquote>
+                <figcaption><span>취</span><div><strong>취업 준비생</strong>직무 스터디</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>모의 면접 영상을 다시 보니 <mark class="gap">‘그러니까’, ‘약간’만 반복</mark>하고 있었어요.</blockquote>
+                <figcaption><span>개</span><div><strong>신입 개발자 지원</strong>모의 면접</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>개념 정리 노트는 완벽한데, <mark class="gap">노트를 덮으면</mark> 설명을 시작조차 못 해요.</blockquote>
+                <figcaption><span>약</span><div><strong>약학과 2학년</strong>기말고사</div></figcaption>
+              </figure>
+            </div>
+            </div>
+            <div class="moment-col">
+            <div class="moment-track">
+              <figure class="moment-card">
+                <blockquote>문제는 다 맞혔는데, 친구가 왜 그렇게 푸냐고 물으니 <mark class="gap">설명을 못 하겠더라고요.</mark></blockquote>
+                <figcaption><span>고</span><div><strong>고등학교 2학년</strong>내신 대비</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>서술형 답안을 쓰다 보니 키워드만 알고 <mark class="gap">연결 고리는 모르고</mark> 있었어요.</blockquote>
+                <figcaption><span>행</span><div><strong>행정학과 3학년</strong>공무원 시험</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>혼자 공부하면 <mark class="gap">어디서 틀렸는지 알려 줄 사람</mark>이 없어서 불안해요.</blockquote>
+                <figcaption><span>편</span><div><strong>편입 준비생</strong>전공 필기</div></figcaption>
+              </figure>
+              <figure class="moment-card">
+                <blockquote>답은 아는데 ‘왜’를 물으면 결국 <mark class="gap">교과서 문장을 외워</mark> 말하게 돼요.</blockquote>
+                <figcaption><span>수</span><div><strong>고등학교 3학년</strong>면접형 수시</div></figcaption>
+              </figure>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="service-section" id="service">
+        <div class="service-heading">
+          <p class="section-kicker">대표 서비스 · 다들 AI</p>
+          <h2>정리하고, 가르치고,<br /><strong>후배가 시험 봅니다.</strong></h2>
+          <p>공부하기 모드에서 직접 정리하고, 가르치기 모드에서 후배에게 설명하세요. 후배는 내가 가르친 것만으로 시험을 봅니다.</p>
+        </div>
+
+        <div class="demo" id="demo">
+          <div class="demo-tabs" role="tablist" aria-label="다들 AI 모드">
+            <button type="button" role="tab" id="tabStudy" aria-controls="paneStudy" aria-selected="true" data-mode="study"><b>01</b>공부하기</button>
+            <button type="button" role="tab" id="tabTeach" aria-controls="paneTeach" aria-selected="false" data-mode="teach" tabindex="-1"><b>02</b>가르치기</button>
+            <span class="demo-topic">오늘의 개념 · 계절이 생기는 이유</span>
+          </div>
+
+          <div class="demo-pane" id="paneStudy" role="tabpanel" aria-labelledby="tabStudy" data-pane="study">
+            <div class="study">
+              <article class="study-source">
+                <p class="pane-label">원자료 · 중학교 과학</p>
+                <h3>계절이 생기는 이유</h3>
+                <p><span data-hl="1">지구의 자전축은 공전 궤도면에 대해 약 23.5° 기울어져 있다.</span> 그래서 지구가 태양 주위를 도는 동안 태양을 향하는 쪽이 조금씩 달라진다.</p>
+                <p><span data-hl="1">북반구가 태양 쪽으로 기울어진 시기에는 햇빛이 높은 각도로 비치고 낮이 길어진다.</span> 같은 면적이 받는 햇빛 에너지가 많아져 기온이 오르고, 이때가 여름이다. 반대쪽으로 기울어진 시기에는 햇빛이 비스듬히 비치고 낮이 짧아져 겨울이 된다.</p>
+                <p><span data-hl="1">지구와 태양 사이의 거리는 1년 동안 약 3%밖에 변하지 않으며, 오히려 북반구가 겨울인 1월에 가장 가깝다.</span></p>
+              </article>
+              <div class="cornell" aria-live="polite">
+                <div class="cornell-cue"><p class="pane-label">단서</p><ul id="cueList"></ul></div>
+                <div class="cornell-notes"><p class="pane-label">필기</p><ul id="noteList"></ul></div>
+                <div class="cornell-summary"><p class="pane-label">요약</p><p id="summaryText"></p></div>
+              </div>
+            </div>
+            <div class="demo-footer">
+              <ol class="study-steps" id="studySteps"><li>필기</li><li>단서 질문</li><li>요약</li></ol>
+              <button class="demo-button" id="studyButton" type="button">필기하기 <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+
+          <div class="demo-pane" id="paneTeach" role="tabpanel" aria-labelledby="tabTeach" data-pane="teach" hidden>
+            <div class="teach">
+              <div class="demo-main">
+                <div class="demo-chat" id="demoChat" aria-live="polite"></div>
+                <button class="demo-button" id="demoButton" type="button">설명하기 <span aria-hidden="true">→</span></button>
+              </div>
+              <aside class="demo-panel" aria-label="후배의 시험">
+                <p class="demo-panel-label">후배의 시험</p>
+                <p class="demo-score"><span id="demoScore">–</span><small> / 3</small></p>
+                <div class="demo-meter"><span id="demoMeter"></span></div>
+                <ol class="exam-list" id="examList">
+                  <li><i></i><div><strong>여름에 햇빛은 어떻게 비칠까?</strong><span></span></div></li>
+                  <li><i></i><div><strong>1월에 태양과 가장 가까운데, 한국은 왜 겨울일까?</strong><span></span></div></li>
+                  <li><i></i><div><strong>12월에 호주는 왜 여름일까?</strong><span></span></div></li>
+                </ol>
+                <div class="demo-legend">
+                  <span><mark class="gap">설명 못 한 부분</mark></span>
+                  <span><mark class="ok">설명 완료</mark></span>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="loop-section" id="loop">
+        <div class="loop-copy">
+          <p class="section-kicker">반복 학습 루프</p>
+          <h2>완전히 설명할 때까지,<br /><strong>루프는 계속됩니다.</strong></h2>
+          <p>한 번 가르치고 끝나지 않습니다. 후배가 틀린 문제는 내가 제대로 설명하지 못한 부분입니다. 그 부분만 다시 공부하고 다시 가르쳐, 후배가 만점을 받을 때 비로소 ‘설명 완료’가 됩니다.</p>
+          <p class="loop-exit-note"><mark class="ok">후배 만점</mark> → 개념을 ‘설명 완료’로 기록하고 다음 개념으로</p>
+        </div>
+
+        <div class="loop-diagram">
+          <svg class="loop-ring" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <marker id="loopArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" />
+              </marker>
+            </defs>
+            <circle class="loop-track" cx="50" cy="50" r="38" />
+            <path class="loop-arc" d="M 69.00 17.09 A 38 38 0 0 1 88.00 50.00" marker-end="url(#loopArrow)" />
+            <path class="loop-arc" d="M 69.00 82.91 A 38 38 0 0 1 31.00 82.91" marker-end="url(#loopArrow)" />
+            <path class="loop-arc" d="M 12.00 50.00 A 38 38 0 0 1 31.00 17.09" marker-end="url(#loopArrow)" />
+          </svg>
+          <div class="loop-orbit" aria-hidden="true"><span></span></div>
+          <div class="loop-center" aria-hidden="true"><b>↻</b><span>막힌 부분이 없을 때까지</span></div>
+
+          <ol class="loop-nodes">
+            <li class="loop-node node-me">
+              <span class="node-who">나</span>
+              <div><small>01 · 공부하기</small><strong>직접 정리하기</strong><p>원자료를 보며 코넬식 노트로 내 말로 정리합니다.</p></div>
+            </li>
+            <li class="loop-node node-senior">
+              <img src="./public/junior-student.webp?v=2" alt="" />
+              <div><small>02 · 가르치기</small><strong>후배에게 설명하기</strong><p>후배가 이것저것 물으며 내 설명을 듣습니다.</p></div>
+            </li>
+            <li class="loop-node node-junior">
+              <span class="node-who is-exam">✎</span>
+              <div><small>03 · 후배의 시험</small><strong>가르친 것만으로 시험</strong><p>틀린 문제가 곧 <mark class="gap">내가 모르는 부분</mark>입니다.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="corridor-section" id="corridor" aria-labelledby="corridor-title">
+        <div class="corridor-sticky">
+          <div class="corridor-copy">
+            <p class="section-kicker">끝까지 가는 공부</p>
+            <h2 id="corridor-title">끝까지 설명할 수 있을 때,<br /><strong>진짜 아는 것입니다.</strong></h2>
+          </div>
+          <div class="corridor-stage" id="corridorStage" aria-hidden="true"></div>
+          <p class="corridor-count" aria-live="polite">설명 완료 <b id="corridorDone">0</b> / <span id="corridorTotal">16</span></p>
+        </div>
       </section>
 
       <section class="about-section" id="company">
@@ -52,25 +289,6 @@
             <div><dt>기반</dt><dd>Developer</dd></div>
           </dl>
         </div>
-      </section>
-
-      <section class="service-showcase" id="service">
-        <div class="service-copy">
-          <p class="section-kicker">대표 서비스</p>
-          <h2>다들 AI</h2>
-          <p class="service-lead">가르쳐야만 배우는<br />나만의 AI 후배</p>
-          <p class="service-description">설명하는 순간 비어 있던 이해가 보입니다. 다들 AI는 사용자가 가르친 내용만 기억하고, 질문과 시험으로 배움을 자기 것으로 만들게 돕습니다.</p>
-          <ol class="service-steps">
-            <li><span>01</span>내 말로 가르치기</li>
-            <li><span>02</span>후배의 질문에 답하기</li>
-            <li><span>03</span>헷갈린 부분 다시 배우기</li>
-          </ol>
-          <a class="primary-link" href="./contact.html">다들 AI 문의하기 <span aria-hidden="true">→</span></a>
-        </div>
-        <figure class="service-media">
-          <img src="./public/ai-junior-hero-muted.png" alt="노트와 연필을 든 다들 AI 후배 캐릭터" />
-          <figcaption>AI가 설명하고, 사람이 듣는 순서를 뒤집었습니다.</figcaption>
-        </figure>
       </section>
 
       <section class="value-section" id="values">
@@ -108,7 +326,7 @@
       </section>
 
       <section class="closing-section">
-        <p>다음에 필요한 기술을<br />다들과 함께 만듭니다.</p>
+        <p>다음에 필요한 기술을<br /><strong>다들과 함께 만듭니다.</strong></p>
         <div class="closing-actions">
           <a href="./employees.html">함께하는 사람들 <span aria-hidden="true">→</span></a>
           <a href="./contact.html">Contact <span aria-hidden="true">→</span></a>
@@ -121,6 +339,8 @@
       <p>사람의 가능성을 기술로 확장합니다.</p>
       <div class="footer-links"><a href="./employees.html">임직원</a><a href="./pr.html">홍보</a><a href="./contact.html">Contact</a></div>
       <small>© 2026 DADLE Inc.</small>
+      <p class="footer-credit">이 페이지에는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다.</p>
     </footer>
+    <script src="./script.js?v=21"></script>
   </body>
 </html>
