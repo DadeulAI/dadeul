@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-    <link rel="stylesheet" href="./styles.css?v=21" />
+    <link rel="stylesheet" href="./styles.css?v=22" />
   </head>
   <body>
     <header class="site-header">
@@ -27,17 +27,24 @@
     <main>
       <section class="home-hero" id="top">
         <div class="hero-copy">
-          <a class="hero-badge" href="#service">시험·면접 전, 말로 설명하며 공부하기 <span aria-hidden="true">→</span></a>
-          <h1>
-            <span class="hero-light"><em>안다고 생각했던 것,</em></span>
-            <span class="hero-bold">설명해 보면 보입니다.</span>
-          </h1>
-          <p class="hero-description">AI와 공부하면 다 아는 것 같지만, 막상 설명하려면 막힙니다. 다들 AI는 내가 안다고 착각한 부분을 찾아, 진짜 설명할 수 있을 때까지 다시 배우게 합니다.</p>
+          <h1 class="hero-title">읽을 땐 알았는데,<br />말하려니 막혔나요?</h1>
+          <p class="hero-description">다들 AI에서는 공부한 내용을 AI 후배에게 가르칩니다. 후배가 되묻는 곳이 내가 아직 모르는 곳입니다.</p>
           <div class="hero-actions">
-            <a class="primary-link" href="#demo">직접 설명해 보기 <span aria-hidden="true">→</span></a>
+            <a class="primary-link" href="#demo">직접 가르쳐 보기</a>
             <a class="secondary-link" href="#company">다들 알아보기</a>
           </div>
         </div>
+
+        <figure class="hero-note" aria-label="후배를 가르치다 막히는 장면">
+          <p class="note-topic">계절이 생기는 이유</p>
+          <p class="note-line note-mine">여름엔 지구가 태양이랑 <span class="note-circle">가까워져서<svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18 44 C 14 16, 92 6, 150 10 C 196 14, 198 50, 166 64 C 120 80, 36 76, 14 56 C 4 46, 22 28, 60 22" /></svg><span class="note-margin" aria-hidden="true">여기서 막혔다</span></span> <span class="nowrap">더운 거야.</span></p>
+          <div class="note-junior">
+            <img src="./public/junior-student.webp?v=2" alt="" />
+            <p>선배, 지구는 1월에 태양과 제일 가깝대요. 그럼 1월이 제일 더워야 하지 않아요?</p>
+          </div>
+          <p class="note-line note-stuck">음, 그건…<span class="note-caret" aria-hidden="true"></span></p>
+          <figcaption class="note-caption">후배가 되물은 곳을 다시 공부하고, 다시 가르칩니다.</figcaption>
+        </figure>
       </section>
 
       <section class="compare-section" id="problem">
